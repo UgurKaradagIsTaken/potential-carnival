@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+
+  function myFunction() {
+    var x = document.getElementsByClassName("city")
+    for(var i = 0; i > x.length; i++) {
+      x[i].style.display = "none"
+    }
+  }
+</script>
+
+<style>
+
+
+.city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+.myCity {
+  background-color: aqua;
+  color: violet;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+.extra {
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<div class="city">
+<h2>London</h2>
+<p>London is the capital of England.</p>
+</div> 
+
+<div class="city">
+<h2>Paris</h2>
+<p>Paris is the capital of France.</p>
+</div>
+
+<div class="city">
+<h2>Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+</div>
+<div class="myCity ">
+  <h2>Istanbul</h2>
+  <p> Istanbul <span class="myCity extra"> was</span>is the ex capital of Turkiye</p>
+</div>
+
+</body>
+</html>
+

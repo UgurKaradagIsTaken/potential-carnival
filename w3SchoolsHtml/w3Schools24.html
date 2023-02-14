@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First JavaScript</h1>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+
+<button type="button" onclick="document.getElementById('demo').innerHTML =Date()"> Click me if you dare </button>
+<p id="demo"></p>
+<p id="test"> </p>
+<script>
+  document.getElementById("test").innerHTML = "Test ugur";
+</script>
+
+
+<img id="myImage" src="pic_bulboff.gif" width="100"
+height="180">
+
+<script>
+  function myFunction(sw) {
+    var pic;
+    if(sw == 0) {
+      pic = "pix_bulboff.gif"
+    }else {
+      pic = "pic_bulbon.gif"
+    }
+    document.getElementById('myImage').src = pic;
+  }
+</script>
+<p>
+<button type="button" onclick="light(1)">
+  Light on
+</button>
+<button type="button" onclick="light(0)">
+  Light Off
+</button>
+</p>
+</body>
+</html> 
+
